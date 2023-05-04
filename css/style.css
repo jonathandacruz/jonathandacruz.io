@@ -5,7 +5,15 @@
 .space-db--0 {
   margin-bottom: 0px;
 }
-
+.testimonial-card {
+ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 400px;
+ 
+}
+  
 .space-db--5 {
   margin-bottom: -5px;
 }
