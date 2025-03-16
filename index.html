@@ -1,621 +1,770 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jonathan da Cruz - Desenvolvedor de Software</title>
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="./plugins/bootstrap-4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./plugins/meanmenu/meanmenu.css">
-  <link rel="stylesheet" href="./plugins/slick-1.8.1/slick.css">
-  <link rel="stylesheet" href="./plugins/fancybox-master/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="./plugins/aos-animation/aos.css">
-  <!-- fonts -->
-  <link rel="stylesheet" href="./fonts/ep-icon-fonts/css/style.css">
-  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css">
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="./css/settings.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="./favicon.ico" />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1NN0NPLGXK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Deafult Meta Tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OG Meta Tag -->
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" content="Aprenda programação e acelere sua carreira na tecnologia | Jonathan da Cruz">
+    <meta name="og:description"
+        content="Jonathan da Cruz, instrutor na Udemy, ensina programação de forma prática e descomplicada. Descubra conteúdos, cursos e dicas para acelerar sua jornada na tecnologia.">
+    <meta property="og:image" content="./assets/images/og-images.png">
+    <!-- Title -->
+    <title>Jonathan da Cruz | Papo de tecnologia</title>
+    <!-- Favicon -->
+    <link rel="icon" id="favicon" href="./assets/images/favicon.png" type="image/gif" sizes="16x16">
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 5 CDN/ Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Fancybox Image Gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <!-- Slider CSS Link -->
+    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick-theme.css">
+    <!-- Bootstarp 5 CSS Link -->
+    <link rel="stylesheet" href="./lib/bootstrap-5/css/bootstrap.min.css">
+    <!-- Main CSS Link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Responsive CSS Link -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NN0NPLGXK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-1NN0NPLGXK');
-</script>
-
+        gtag('config', 'G-1NN0NPLGXK');
+    </script>
 </head>
 
 <body>
-<div class="site-wrapper">
-<!-- Header Starts -->
-  <header class="site-header position-relative">
+    <!-- Home Page Start -->
+
+    <!--  Preloader Start  -->
+    <div class="preloader">
+        <img src="./assets/images/logo.svg" alt="Preloader Logo">
+    </div>
+    <!--  Preloader End  -->
+
+    <!-- Header Start -->
+    <header class="d2c_navbar sticky-top">
         <div class="container">
-            <div class="row justify-content-center align-items-center position-relative">
-                <div class="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
-                  <!-- Brand Logo -->
-                    <div class="brand-logo">
-                        <a href=""><img src="image/main-logo.png" alt="" /></a>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg" id="d2c_main_nav">
+                <!-- Logo -->
+                <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.svg" class="w-100"
+                        alt="Logo"></a>
+                <!-- Logo -->
+
+                <!-- HamBurger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars"></i></span>
+                </button>
+                <!-- HamBurger -->
+
+                <!-- Nav Item -->
+                <div class="collapse navbar-collapse js-clone-nav justify-content-between">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quem-sou">Quem sou</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank"
+                                href="https://hotmart.com/pt-br/marketplace/produtos/como-falar-em-publico-e-possivel-nao-ter-medo/S11941831Y">E-book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cursos">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato-footer">Contato</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Nav Item -->
+            </nav>
+            <!-- Navbar -->
+
+            <!-- Tab And Mobile View -->
+            <div class="collapse navbar-collapse d2c_mobile_view" id="navbarSupportedContent">
+                <div class="show_width container">
+                    <div class="text-right">
+                        <button class="navbar-toggler d2c_cross_btn p-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span><i class="fa fa-times"></i></span>
+                        </button>
+                    </div>
+
+                    <div class="navbar d2c_mobile_view_body"></div>
+                </div>
+            </div>
+            <!-- Tab And Mobile View -->
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section class="d2c_hero_wrapper text-center text-md-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4">
+                    <h1 class="d2c_large_title position-relative">Aqui, vamos aprender,<span> crescer e
+                            transformar</span> com tecnologia.</h1>
+                    <p>Sou Jonathan da Cruz, desenvolvedor de sistemas, instrutor e palestrante. Acredito que o
+                        aprendizado se torna mais poderoso quando compartilhado. Aqui, você encontrará conhecimento
+                        prático para acelerar sua jornada na tecnologia.</p>
+                    <a href="mailto:jonathanadcz@gmail.com" class="btn position-relative">Fale comigo</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="d2c_hero_right_wrapper">
+                        <div class="d2c_img_wrapper position-relative">
+                            <img src="./assets/images/myprofile.png" class="w-100 h-100" alt="Hero Right Image">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-8 col-lg-2 col-xl-2 d-none d-sm-block order-lg-3">
-                    <div class="header-btns justify-content-end">
-                        <a href="#contact" class="btn btn-link"><b>Contatos</b></a>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="quem-sou" class="d2c_about_wrapper d2c_props_bg position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-12 text-center text-md-start">
+                            <h4 class="d2c_sub_title">Sobre Mim</h4>
+                            <h2 class="d2c_title pe-0 pe-md-5">Acredito no poder da tecnologia para resolver problemas
+                                reais</h2>
+
+                            <p class="d2c_title_content">Estou aqui para ajudar você a transformar desafios em
+                                oportunidades de aprendizado, guiando sua jornada no mundo da tecnologia com conteúdos
+                                práticos.</p>
+
+                        </div>
+                        <div class="col-md-6 col-lg-12">
+                            <ul class="nav mb-3" id="pills-tab-one" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-mission-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-mission" type="button" role="tab"
+                                        aria-controls="pills-mission" aria-selected="true">Desenvolvedor</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-vission-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-vission" type="button" role="tab"
+                                        aria-controls="pills-vission" aria-selected="false">Instrutor</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tab-oneContent">
+                                <div class="tab-pane fade show active" id="pills-mission" role="tabpanel"
+                                    aria-labelledby="pills-mission-tab">
+                                    <p>Eu sou Jonathan da Cruz, bacharel em Sistemas de Informação e desenvolvedor de
+                                        software. Há dez anos mergulhado no mundo da tecnologia, meu objetivo é
+                                        transformar problemas do dia a dia em soluções eficazes.</p>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            Desenvolvimento ágil com Node.js e Laravel
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            Soluções robustas em bancos de dados Oracle e Postgres
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-vission" role="tabpanel"
+                                    aria-labelledby="pills-vission-tab">
+                                    <p>Como instrutor na Udemy, minha missão é proporcionar um aprendizado dinâmico e
+                                        acessível para todos. Acredito que, com o conteúdo certo e dedicação, qualquer
+                                        um pode alcançar seus objetivos na tecnologia, superando desafios e conquistando
+                                        resultados extraordinários.</p>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            Capacitar alunos a alcançar sucesso na área de tecnologia
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            Oferecer soluções de aprendizado rápidas, práticas e aplicáveis
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-               
-              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send/?phone=5554996137269&text=Ola+Jonathan" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
-  z-index:1000;" target="_blank">
-<i style="margin-top:16px" class="fa fa-whatsapp"></i>
-</a>
-                <!-- Menu Block -->
-                <div class="col-sm-1 col-6 col-lg-6 col-xl-6 offset-lg-2  position-static order-lg-2">
-                    <div class="main-navigation">
-                        <ul class="main-menu">
-                           
-                            <li class="menu-item "><a href="#courses"><b>Cursos</b></a></li>
-                            <li class="menu-item "><a target="_blank" href="https://hotmart.com/pt-br/marketplace/produtos/como-falar-em-publico-e-possivel-nao-ter-medo/S11941831Y"><b>E-book</b></a></li>
-                    
-                            <li class="menu-item"><a href="#projects"><b>Projetos Realizados</b></a></li>
-                            <li class="menu-item"><a href="#questions"><b>Perguntas ?</b></a></li>
+                <div class="col-md-12 col-lg-6">
+                    <a href="https://www.youtube.com/@jonathandacruz" target="_blank" class="d2c_video_wrapper">
+                        <i class="far fa-play-circle"></i>
+                        <h6 class="mb-0">Siga no Youtube</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="d2c_out_img">
+            <img src="./assets/images/brand-youtube.png" class="img-fluid" alt="Jonathan da Cruz no Youtube">
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Steps Section Start -->
+    <section class="d2c_steps_wrappper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h4 class="d2c_sub_title">Criando um software</h4>
+                    <h2 class="d2c_title">Utilizando esse conceito podemos resolver alguns problemas</h2>
+                    <p class="d2c_title_content">No desenvolvimento de software, saber priorizar é fundamental. Esse é o
+                        desafio diário de toda a TI. Resolver problemas envolve criar soluções eficientes, começando
+                        pela identificação do que realmente vale a pena otimizar.</p>
+                </div>
+            </div>
+            <div class="d2c_steps_wrapp">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 text-center mb-4">
+                        <div class="d2c_steps_number">
+                            1
+                        </div>
+                        <h4>Identificando a dor</h4>
+                        <p>O que está sendo feito repetidamente e pode ser automatizado?</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center position-relative mb-4">
+                        <div class="d2c_number_bottom">
+                            <div class="d2c_steps_number">
+                                2
+                            </div>
+                            <h4>Valor de negócio</h4>
+                            <p>Resolver esse problema vai gerar ganho operacional ou financeiro?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center">
+                        <div class="d2c_steps_number">
+                            3
+                        </div>
+                        <h4>80/20</h4>
+                        <p>A regra de Pareto sugere que 20% das ações podem resolver 80% do problema? O que fazer
+                            primeiro</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center position-relative">
+                        <div class="d2c_number_bottom">
+                            <div class="d2c_steps_number">
+                                4
+                            </div>
+                            <h4>Implementação</h4>
+                            <p>Desenvolver uma funcionalidade mais simples e disponibilizá-la para uso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Steps Section End -->
+
+
+    <!-- Counter Section Start -->
+    <section class="d2c_counter_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3 text-center mb-4 mb-lg-0">
+                    <div class="d2c_counter">
+                        <h2><span class="count"> + 6.000</span></h2>
+                        <h4 class="mb-0">Alunos Inscritos</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 text-center mb-4 mb-md-0">
+                    <div class="d2c_counter d2c_border">
+                        <h2><span class="count">400</span>+ <h2>
+                                <h4 class="mb-0">Avaliações</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="d2c_counter">
+                        <h2><span class="count">6</span></h2>
+                        <h4 class="mb-0">Cursos</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="d2c_counter">
+                        <h2><span class="count">100</span>k+</h2>
+                        <h4 class="mb-0">Minutos de ensino</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Pricing Section Start -->
+    <section class="d2c_pricing_wrapper d2c_props_bg" id="cursos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <h4 class="d2c_sub_title">Cursos</h4>
+                    <h2 class="d2c_title">Conheça meus cursos</h2>
+                    <p class="d2c_title_content">Projetados para ajudar você a aprimorar suas habilidades em programação
+                        e tecnologia. Com conteúdo de qualidade e uma abordagem prática independentemente do seu nível
+                        de experiência.</p>
+
+                </div>
+            </div>
+
+            <ul class="row nav mb-4 mb-lg-5" id="pills-tab" role="tablist">
+                <li class="col-md-3 nav-item mb-4" role="presentation">
+                    <button class="nav-link active" id="pills-starter-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-starter" type="button" role="tab" aria-controls="pills-starter"
+                        aria-selected="true">
+                        <span class="d2c_btn_sub_title">Análise de dados com SQL</span>
+                        <span class="mb-0 d2c_btn_title">R$29,90</span>
+                    </button>
+                </li>
+                <li class="col-md-3 nav-item mb-4" role="presentation">
+                    <button class="nav-link" id="pills-growth-tab" data-bs-toggle="pill" data-bs-target="#pills-growth"
+                        type="button" role="tab" aria-controls="pills-growth" aria-selected="false">
+                        <span class="d2c_btn_sub_title">Controle de versão GIT</span>
+                        <span class="mb-0 d2c_btn_title">R$29,90</span>
+                    </button>
+                </li>
+                <li class="col-md-3 nav-item mb-4" role="presentation">
+                    <button class="nav-link" id="pills-pro-tab" data-bs-toggle="pill" data-bs-target="#pills-pro"
+                        type="button" role="tab" aria-controls="pills-pro" aria-selected="false">
+                        <span class="d2c_btn_sub_title">Manutenção de computadores</span>
+                        <span class="mb-0 d2c_btn_title">R$29,90</span>
+                    </button>
+                </li>
+                <li class="col-md-3 nav-item mb-4" role="presentation">
+                    <button class="nav-link" id="pills-enterprise-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-enterprise" type="button" role="tab" aria-controls="pills-enterprise"
+                        aria-selected="false">
+                        <span class="d2c_btn_sub_title">OCR e Inteligência Artificial</span>
+                        <span class="mb-0 d2c_btn_title">R$29,90</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-starter" role="tabpanel"
+                    aria-labelledby="pills-starter-tab">
+                    <div class="d2c_pricing_details">
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h4>O que você irá aprender?</h4>
+                                <ul>
+                                    <ul>
+
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            Criação e gerenciamento de tabelas usando comandos como CREATE, ALTER e DROP
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            Inserção, consulta, atualização e exclusão de dados com INSERT, SELECT,
+                                            UPDATE e DELETE
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            Uso de filtros e condições com WHERE, ORDER BY e LIMIT para organizar e
+                                            encontrar dados
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            Fundamentos de junções (JOINs) para combinar informações de várias tabelas
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            Trabalhar com funções agregadas como COUNT, SUM, AVG, MIN e MAX para
+                                            análises simples
+                                        </li>
+
+
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Aonde usar SQL?</h4>
+                                <p>Nossos especialistas mostram onde aplicar SQL para organizar, consultar e analisar
+                                    dados, capacitando você a resolver desafios do mundo real.</p>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Em empresas, para gerar relatórios e extrair informações de vendas, clientes ou
+                                        estoques.
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Em projetos de tecnologia, como análise de dados de aplicativos ou sites, com um
+                                        projeto prático incluso.
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Em áreas como ciência de dados, marketing e desenvolvimento, para manipular
+                                        bancos de dados e tomar decisões baseadas em evidências.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://www.udemy.com/course/introducao-a-sql-e-banco-relacional-com-postgres/?referralCode=D682C924527BFFDC01D4"
+                            class="btn">Assistir agora</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-growth" role="tabpanel" aria-labelledby="pills-growth-tab">
+                    <div class="d2c_pricing_details">
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h4>O que você irá aprender?</h4>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Conceitos básicos de controle de versão, perfeitos para iniciantes em
+                                        programação
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Como rastrear e gerenciar alterações no código com comandos essenciais do Git
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Uso de ferramentas fundamentais como commits, branches e merges para organizar
+                                        projetos
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Integração com plataformas como GitHub para colaborar em equipe e compartilhar
+                                        código
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Onde usar Git?</h4>
+                                <p>Neste curso você vai aprender onde aplicar o Git para gerenciar código e colaborar em
+                                    projetos, capacitando você para trabalhar em equipe de forma eficiente.</p>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Em projetos de desenvolvimento de software para controlar versões e histórico de
+                                        alterações.
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Em equipes de tecnologia para colaborar em repositórios compartilhados no GitHub
+                                        ou GitLab.
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Em iniciativas open-source ou pessoais para organizar e publicar seu código.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://www.udemy.com/course/git-controle-de-versao/?referralCode=FD1BFEB99BF453504B3F"
+                            class="btn">Assista agora</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-pro" role="tabpanel" aria-labelledby="pills-pro-tab">
+                    <div class="d2c_pricing_details">
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h4>O que você irá aprender?</h4>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Conceitos básicos de hardware e software, ideais para iniciantes em tecnologia
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Como identificar e resolver problemas comuns em computadores
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Uso de ferramentas essenciais para manutenção e diagnóstico de PCs
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Técnicas de limpeza, atualização e montagem básica de componentes
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Perfeito para quem quer manter computadores funcionando e dar os primeiros
+                                        passos em suporte técnico
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Onde você pode aplicar?</h4>
+                                <p>O instrutor mostra onde os alunos podem usar suas habilidades de manutenção básica de
+                                    computadores para resolver problemas e otimizar equipamentos.</p>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Em casa ou pequenas empresas, para consertar e manter computadores pessoais.
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Em suporte técnico básico, ajudando a diagnosticar e solucionar falhas de
+                                        hardware e software.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://www.udemy.com/course/hardware-e-formatacao/?referralCode=09A793A6500C6416DDFB"
+                            class="btn">Assistir agora</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-enterprise" role="tabpanel" aria-labelledby="pills-enterprise-tab">
+                    <div class="d2c_pricing_details">
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h4>O que você irá aprender?</h4>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Fundamentos de OCR e Document AI do Google, adaptados para iniciantes em
+                                        tecnologia
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Como extrair texto de imagens e documentos digitalizados usando OCR
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Uso das ferramentas do Google Document AI para processar e estruturar dados de
+                                        documentos
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Integração de APIs do Google para automação de tarefas de leitura e análise
+                                        documental
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Onde você pode aplicar?</h4>
+                                <p>O instrutor apresenta onde utilizar OCR e Document AI do Google para otimizar
+                                    processos e extrair valor de documentos.</p>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Em escritórios, para digitalizar e organizar contratos, recibos ou formulários
+                                        automaticamente.
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Em projetos de arquivamento, convertendo documentos físicos em dados
+                                        pesquisáveis e estruturados.
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Em startups ou empresas de tecnologia, para criar soluções de automação baseadas
+                                        em inteligência artificial documental.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Em breve</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section End -->
+
+    <!-- Testimonial Section Start -->
+    <section class="d2c_testimonial_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <h4 class="d2c_sub_title">Avaliações</h4>
+                    <h2 class="d2c_title">O que nossos alunos estão falando.</h2>
+                    <p class="d2c_title_content">Estamos sempre preocupados em interagir com nossos alunos, respondendo
+                        dúvidas, corrigindo exercícios e oferecendo simulados para apoiar seu aprendizado.</p>
+                </div>
+            </div>
+            <div class="row d2c_testimonial_slider">
+                <div class="col">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-12">
+                            <h3>Desde o início, o curso é focado na prática, o que o torna extremamente envolvente e
+                                desafiador. Essa abordagem prática mantém o aprendizado dinâmico e eficaz,
+                                proporcionando uma experiência enriquecedora.</h3>
+                            <h4>Rafael </h4>
+                            <span>Análise de dados com SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-12">
+                            <h3> Foi bom , gostei bastante , abrir minha mente pra conhecer mais essa área.</h3>
+                            <h4>Fernando </h4>
+                            <span>Manutenção de Computadores</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-12">
+                            <h3>Muito bom! Direto para a aulas sem demora, traz pontos básicos mas importantes e
+                                essenciais para quem está aprendendo.</h3>
+                            <h4>Juliomar </h4>
+                            <span>Análise de dados com SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-md-12">
+                            <h3>Vídeo bem explicativo e conteúdo dinâmico, visto que, pude aplicar na prática os
+                                conhecimentos adquiridos.</h3>
+                            <h4>Matias</h4>
+                            <span>Manutenção</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-12">
+                            <h3> Sim! Era o que eu esperava, por mais que eu não tenha um conhecimento avançado(ainda)
+                                em relação a este universo que são os computadores, hoje após concluir este curso me da
+                                um entusiasmo de aprender mais e, colocar em prática o que aprendi. Gostei demais,
+                                parabéns ao Professor Jonathan da Cruz pela competência ! A seção de Hardware é muito
+                                bom !</h3>
+                            <h4>Gustavo </h4>
+                            <span>Manutenção de Computadores</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Call To Action Section Start -->
+    <section class="d2c_c2a_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 text-center">
+                    <h2 class="d2c_title">Desbloqueie Seu Potencial como Desenvolvedor – Dê o Primeiro Passo Rumo ao
+                        Sucesso!</h2>
+                    <p class="d2c_title_content px-0 px-md-5">Inicie sua jornada para dominar a programação e a
+                        tecnologia. Descubra cursos completos para se destacar no mundo do desenvolvimento.</p>
+                    <a href="https://www.udemy.com/user/jonathan-da-cruz/" class="btn secondary_btn"
+                        target="_blank">Comece agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+
+
+    <!-- Footer Section Start -->
+    <footer class="d2c_footer_wrapper d2c_entro_launch_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-4 mb-4 mb-lg-0">
+                    <a href="./index.html"><img src="./assets/images/footer_logo.svg" alt="Footer Logo"></a>
+                    <p class="mb-0">Sou Jonathan da Cruz, desenvolvedor de sistemas, instrutor e palestrante.</p>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                    <div class="d2c_contact_details">
+                        <h6>Fale comigo</h6>
+                         
+                        <div class="d2c_info_wrapper d-flex align-items-center">
+                            <a href="mailto:jonathanadcz@gmail.com" class="d2c_social_icon"><i
+                                    class="fas fa-envelope"></i></a>
+                            <p class="mb-0">jonathanadcz@gmail.com</p>
+                        </div>
+                        <div class="d2c_info_wrapper d-flex align-items-center">
+                            <a href="https://www.google.com/maps/search/8819+ohio+south+gate,+ca+90290/@37.6571581,-109.9648403,5z/data=!3m1!4b1?entry=ttu"
+                                target="_blank" class="d2c_social_icon"><i class="fas fa-map-marker-alt"></i></a>
+                            <p class="mb-0">Chapecó/SC</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contato-footer" class="col-md-6 col-lg-4">
+                    <div class="d2c_footer_newsletter">
+                        <h6>Social Media</h6>
+                        <ul class="list-group list-group-horizontal">
+                             
+                            <li>
+                                <a href="https://www.linkedin.com/in/jonathan-dacruz/" target="_blank"
+                                    class="d2c_social_icon"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@jonathandacruz" target="_blank"
+                                    class="d2c_social_icon"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            
                         </ul>
+
                     </div>
-                    <div class="mobile-menu"></div>
                 </div>
             </div>
         </div>
-        <div class="shape-holder header-shape" data-aos="fade-down" data-aos-once="true"> </div>
-  </header>
-
-<div class="hero-area position-relative">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-7 col-12">
-        <div class="hero-content">
-          <h1>Olá, sou Jonathan da Cruz </h1>
-          <p><b> Falo sobre programação e soluções para desafios do dia a dia! </p>
-          <div class="hero-btn"><a href="https://api.whatsapp.com/send/?phone=5554996137269&text=Ol%C3%A1+Jonathan" class="btn btn--orange btn--hover-shine">Fale comigo </a></div>
-          <div class="rating">
-            <div class="icon">
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star active"></i>
-              <i class="fas fa-star"></i>
+        <!-- Copy Right Start -->
+        <div class="container">
+            <div class="d2c_copy_right_wrapper">
+                <p class="mb-0 text-center">Copyright &copy; <span id="year"></span> <a
+                        href="https://jonathandacruz.com.br/" target="_blank" class="d2c_link">Jonathan da Cruz</a>.
+                    Todos os direitos reservados.</p>
             </div>
-            <span class="text">Alcançando mais de 6.000 alunos</span>
-          </div>
         </div>
-      </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+        <!-- Copy Right End -->
+    </footer>
+    <!-- Footer Section End -->
 
-      <div class="col-xl-6 col-lg-6 col-md-5 col-12">
-        <div class="hero-media">
-          <img src="image/hero.png" alt="">
-          <a class="video-play-trigger" data-fancybox href="https://www.youtube.com/watch?v=ZdMgzJxu_Ms"><i class="icon icon-triangle-right-17-2"></i></a>
-          <div class="media-shape animate-spin"><img src="image/media-shape.png" alt=""></div>
-        </div>
-      </div>
+    <!-- Scroll Button Start -->
+    <div id="scrollBtn" class="d2c_scroll_btn">
+        <a href="#">
+            <i class="fas fa-chevron-up"></i>
+        </a>
     </div>
-  </div>
-  <div class="shape-holder hero-shape" data-aos="fade-right" data-aos-once="true"><img src="image/hero-orange-shape.svg" alt=""></div>
-</div>
+    <!-- Scroll Button  End -->
 
-<!-- Facts Section -->
-<section id="about" class="facts-section">
-  <div class="container">
-    <div class="position-relative">
-      <div class="fact-absolute">
-          <div class="row justify-content-center">
-              <div class="col-xl-7 col-lg-8 mb--35  text-center">
-                <span class="fact-text">Nossa comunidade em números ...</span>
-              </div>
-            </div>
-            <div class="row justify-content-center space-db--30">
-                <div class="col-md-6 col-lg-3 mb--30" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-                        <div class="fact-card" >
-                          <div class="card-content">
-                            <span class="number">6,082</span>
-                            <p class="info">Alunos Inscritos</p>
-                          </div>
-                
-                          <div class="card-icon">
-                            <img src="image/users-wm.png" alt="">
-                          </div>
-                        </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3 mb--30" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="200">
-                        <div class="fact-card" >
-                          <div class="card-content">
-                            <span class="number">6</span>
-                            <p class="info">Cursos</p>
-                          </div>
-                
-                          <div class="card-icon">
-                            <img src="image/fact-2.png" alt="">
-                          </div>
-                        </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3 mb--30" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="400">
-                        <div class="fact-card" >
-                          <div class="card-content">
-                            <span class="number">4,3</span>
-                            <p class="info">De 5 estrelas </p>
-                          </div>
-                
-                          <div class="card-icon">
-                            <img src="image/fact-3.png" alt="">
-                          </div>
-                        </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3 mb--30" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="600">
-                        <div class="fact-card" >
-                          <div class="card-content">
-                            <span class="number">+60k </span>
-                            <p class="info">Minutos de Ensino</p>
-                          </div>
-                
-                          <div class="card-icon">
-                            <img src="image/fact-4.png" alt="">
-                          </div>
-                        </div>
-                </div>
-            </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Course section -->
-<section id="courses" class="course-section position-relative">
-  <div class="shape-holder">
-    <img src="./image/section-2-shape-bg.svg" alt="">
-  </div>
-  <div class="shape-holder" data-aos="zoom-in"  data-aos-once="true">
-    <img src="./image/section-2-shape.svg" alt="">
-  </div>
-  <div class="shape-holder course-shape-3" data-aos="zoom-in-left" data-aos-once="true">
-    
-  </div>
-  <div class="container pt-lg--85">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="section-title section-black">
-          <h2>O que aprender agora?</h2>
-          <p> Aprenda em casa, no escritório, computador ou celular, em qualquer lugar. Participe da nossa comunidade online de aprendizado e alcance seus objetivos.</p>
-        </div>
-      </div>
-    </div>
-    <div class="accordion course-accordion" id="accordionExample" >
-      <div class="card course-card"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-        <div class="card-header" id="headingOne">
-          <div class="row">
-              <div class="col-xl-6 col-lg-7">
-                <div class="acc-left-content d-flex">
-                  <div class="acc-icon">
-                    <img src="./image/desktop.svg" width="90px;"alt="Curso Matutenção de Hardware e Software - Jonathan da Cruz">
-                  </div>
-                  <div class="acc-head-contents">
-                    <h3>Manutenção de Computadores</h3>
-                    <p>Como identificar e corrigir os principais problemas em computadores: hardware e software.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-5 offset-xl-2">
-                <div class="acc-right-content d-flex">
-                  <div class="course-length-badge">
-                    <span><a target="_blank" href="https://www.udemy.com/course/hardware-e-formatacao/?referralCode=09A793A6500C6416DDFB" >4 horas</a></span>
-                    <span> <a target="_blank" href="https://www.udemy.com/course/hardware-e-formatacao/?referralCode=09A793A6500C6416DDFB">Inscreva-se</a></span>
-                  </div>
-                  <button class="btn acc-toggle" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="icon icon-minimal-down"></i>
-                  </button>
-                </div>
-              </div>
-          </div>
-          
-        </div>
-    
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body">
-              <ul class="course-inline-list">
-                <li><a href=""><i class="icon icon-check-2"></i>Formatação de Computadores</a></li>
-                <li><a href=""><i class="icon icon-check-2"></i>Conhecer o hardware</a></li>
-                <li><a href=""><i class="icon icon-check-2"></i>Noções básicas sobre redes</a></li>
-              </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="200">
-        <div class="card-header" id="heading2">
-          <div class="row">
-              <div class="col-lg-6">
-                <div class="acc-left-content d-flex">
-                  <div class="acc-icon">
-                    <img src="./image/compute-site.svg" width="90px;" alt="Criar e hospedar sites gratuitamente - Jonathan da Cruz">
-                  </div>
-                  <div class="acc-head-contents">
-                    <h3>Criar e hospedar sites gratuitamente</h3>
-                    <p>Aprenda a utilizar Jekyll e hospedar seus sites estáticos diretamente no Github gratuitamente</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 offset-lg-2">
-                <div class="acc-right-content d-flex">
-                  <div class="course-length-badge">
-                    <span><a target="_blank" href="https://www.udemy.com/course/desenvolvimento-web-jekyll/?referralCode=DE14B393BEAF89DFE14F"> 5 horas </a> </span>
-                    <span><a target="_blank" href="https://www.udemy.com/course/desenvolvimento-web-jekyll/?referralCode=DE14B393BEAF89DFE14F"> Inscreva-se </a></span>
-                  </div>
-                  <button class="btn acc-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                    <i class="icon icon-minimal-down"></i>
-                  </button>
-                </div>
-              </div>
-          </div>
-          
-        </div>
-    
-        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
-          <div class="card-body">
-              <ul class="course-inline-list">
-                <li><a href=""><i class="icon icon-check-2"></i>Jekyll e Markdown</a></li>
-                <li><a href=""><i class="icon icon-check-2"></i>Estrutura básica de funcionamento</a></li>
-                <li><a href=""><i class="icon icon-check-2"></i>Controle de versão</a></li>
-              </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="400">
-        <div class="card-header" id="heading3">
-          <div class="row">
-              <div class="col-lg-6">
-                <div class="acc-left-content d-flex">
-                  <div class="acc-icon">
-                    <img width="90px;" src="./image/placa-do-github.svg" alt="">
-                  </div>
-                  <div class="acc-head-contents">
-                    <h3>Git e Github - Como controlar versões</h3>
-                    <p>Salvar a versão do seu projeto em arquivos nunca mais. Temporariamente grátis!.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 offset-lg-2">
-                <div class="acc-right-content d-flex">
-                  <div class="course-length-badge">
-                    <span><a target="_blank" href="https://www.udemy.com/course/git-controle-de-versao/?referralCode=FD1BFEB99BF453504B3F">  2 horas</a></span>
-                    <span><a target="_blank" href="https://www.udemy.com/course/git-controle-de-versao/?referralCode=FD1BFEB99BF453504B3F"> Gratuito</a></span>
-                  </div>
-                  <button class="btn acc-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                    <i class="icon icon-minimal-down"></i>
-                  </button>
-                </div>
-              </div>
-          </div>
-          
-        </div>
-    
-        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
-          <div class="card-body">
-              <ul class="course-inline-list">
-                <li><a href=""><i class="icon icon-check-2"></i>Git e Github</a></li>
-                <li><a href=""><i class="icon icon-check-2"></i>Github Pages</a></li>
-                <li><a href=""><i class="icon icon-check-2"></i>Histórico de Versões</a></li>
-              </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card course-card"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="600">
-        <div class="card-header" id="heading4">
-          <div class="row">
-              <div class="col-lg-6">
-                <div class="acc-left-content d-flex">
-                  <div class="acc-icon">
-                    <img width="90px;" src="./image/audio-file.svg" alt="">
-                  </div>
-                  <div class="acc-head-contents">
-                    <h3>Edição de áudio utilizando Reaper</h3> 
-                    <p>Aprenda a gravar e editar audios em poucos minutos utilizando Reaper.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 offset-lg-2">
-                <div class="acc-right-content d-flex">
-                  <div class="course-length-badge">
-                    <span><a  target="_blank" href="https://www.udemy.com/course/edicao-de-audio-utilizando-reaper/?referralCode=88B532AE4536438AC9A0"> 3 horas </a></span>
-                    <span><a target="_blank" href="https://www.udemy.com/course/edicao-de-audio-utilizando-reaper/?referralCode=88B532AE4536438AC9A0"> Inscreva-se </a></span>
-                  </div>
-                  <button class="btn acc-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                    <i class="icon icon-minimal-down"></i>
-                  </button>
-                </div>
-              </div>
-          </div>
-          
-        </div>
-    
-        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
-          <div class="card-body">
-              <ul class="course-inline-list">
-                <li><a href=""><i class="icon icon-check-2"></i>Reaper FM</a></li>
-                <li><a href=""><i class="icon icon-check-2"></i>Edição de Áudio</a></li>
-                <li><a href=""><i class="icon icon-check-2"></i>Gravação de Áudio</a></li>
-              </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Aurthor Starts -->
-<div id="contact" class="aurthor-section">
-  <div class="container">
-    <div class="row  spacing-bottom mb--10">
-      <div class=" col-lg-5 col-md-4" data-aos="zoom-in-right"  data-aos-once="true" data-aos-delay="55" data-aos-duration="1500">
-        <div style="margin-top: 40%; " class="aurthor-image">
-          <img  style="border-radius: 100%;"     src="https://media.licdn.com/dms/image/v2/D4D03AQFKgq1M3qVxoQ/profile-displayphoto-shrink_800_800/B4DZPHNqL_HYAc-/0/1734214067837?e=1747267200&v=beta&t=fEJLBIB0Qfdn_zLxnT8aA1cU3RSQkyZ0IZTUXrXBGHE" alt="">
-        </div>
-      </div>
-
-      <div class="col-lg-6 offset-md-1 col-md-6" data-aos="zoom-in-left"  data-aos-once="true" data-aos-delay="55" data-aos-duration="1500">
-        <div class="aurthor-content">
-          <span class="account">@jonathan_dacruz</span>
-          <h2>Olá! Quem é o Jonathan? </h2>
-          <p> Sou técnico em informática e bacharel em sistemas de informação, com uma trajetória marcada pelo desejo de aprender, criar e compartilhar conhecimentos na área de tecnologia e programação.</p>
-          <div style="display: flex; justify-content: space-evenly ;">
-            <a target="_blank" href="https://www.linkedin.com/in/jonathan-dacruz/">
-               <img width="40px;" src="image/linkedin.svg">
-            </a>
-            <a href="mailto:jonathanadcz@gmail.com">
-               <img width="40px;" src="image/gmail.svg">
-            </a>
-          </div>
-        
-        </div>
-      </div>
-    </div>
-    <span class="section-devider"></span>
-  </div>
-</div>
-
-<!-- Testimonial Starts -->
-<section id="projects" class="testimonial-section position-relative">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-7 col-xl-6">
-              <h2 class="">Conheça alguns projetos que faço parte!</h2>
-          </div>
-      </div>
-      <div class="testimonial-slider-wrapper">
-          <div class="slider-btns"></div>
-          <div class="testimonial-slider">
-              <div class="single-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-                <a target="_blank" href="https://www.workana.com/freelancer/6d8d984d98ecbaf43ef4023a256cfd30">
-                  <div class="testimonial-card">
-                      <div class="image">
-                          <img src="./image/workana.png" alt="">
-                      </div>
-                      <div class="content">
-                          <h4>Recomendações de Clientes</h4>
-                          <span class="d-block">Saiba o que estão falando sobre meu trabalho. Ajudo você resolver qualquer demanda em seu projeto.</span>
-                      </div>
-                  </div>
-                </a>
-              </div>
-              <div class="single-slide" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="200">
-                <a target="_blank" href="https://acad.unoesc.edu.br/inscricao/10101">
-                  <div class="testimonial-card">
-                      <div class="image">
-                          <img width="240" src="./image/unoesc.jpg" alt="">
-                      </div>
-                      <div class="content">
-                          <h4>Instrutor Unoesc E-learning</h4>
-                          <span class="d-block">Curso de Git ministrado para a plataforma e-learning da Universidade do Oeste de Santa Catarina - Unoesc </span>
-                      </div>
-                  </div>
-                </a>
-              </div>
-              <div class="single-slide"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="400">
-                <a target="_blank" href="https://www.udemy.com/user/jonathan-da-cruz/">  
-                <div class="testimonial-card">
-                      <div class="image">
-                          <img src="./image/t4-card-1.jpg" alt="">
-                      </div>
-                      <div class="content">
-                          <h4>Instrutor Udemy</h4>
-                          <span class="d-block">Conheça meu perfil e todos os cursos da plataforma</span>
-                      </div>
-                  </div>
-                </a>
-              </div>
-          </div>
-      
-      </div>
-  </div>
-  <div class="shape-holder testimonial-shape" data-aos="zoom-in-left" data-aos-once="true"><img src="image/testimonial-shape.svg" alt=""></div>
-</section>
-
-
-<!-- FAQ Section -->
-<section class="faq-section position-relative">
-  <div class="container">
-  <!-- faq accordionExample -->
-  <div class="faq-accordion">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div id="questions" class="section-title"><h2>Perguntas Frequentes</h2></div>
-  
-        <div class="accordion faq-accordion space-db--10" id="accordionExample2">
-          <div class="single-faq mb--10" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-            <button class="faq-head" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
-              <h2>Os cursos possuem certificados?</h2>
-              <i class="icon icon-minimal-down"></i>
-            </button>
-        
-            <div id="faq1" class="collapse show" aria-labelledby="faq-heading1" data-parent="#accordionExample2">
-              <div class="faq-body">
-                <p>A maioria dos cursos do acervo de conteúdo da Udemy for Business oferece um certificado de conclusão da Udemy. Quando todos os itens da grade curricular de um curso forem concluídos, um troféu verde aparecerá acima do reprodutor do curso e você verá uma notificação indicando que o certificado de conclusão está pronto</p>
-              </div>
-            </div>
-          </div>
-          <div class="single-faq mb--10" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200" data-aos-once="true">
-                <button class="faq-head collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="true" aria-controls="faq2">
-                  <h2>Posso utilizar o certificado para comprovar horas na faculdade?</h2>
-                  <i class="icon icon-minimal-down"></i>
-                </button>
-        
-            <div id="faq2" class="collapse" aria-labelledby="faq-heading2" data-parent="#accordionExample2">
-              <div class="faq-body">
-                <p>O certificado tem validade** para fins curriculares e em provas de títulos, como certificado de atualização/aperfeiçoamento, respeitando a carga-horária descrita e não podendo ser usado para outros fins.
-                  Por isso, destacamos que NÃO é um certificado técnico profissionalizante ou de graduação ou de pós-graduação e não dá direito de assumir responsabilidades técnicas.
-                  Esteja atento às condições de validação de seu certificado e edital, pois poderá ser invalidado caso não atenda nossos termos e condicões de uso.</p>
-              </div>
-              
-            </div>
-          </div>
-          <div class="single-faq mb--10" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="400">
-                <button class="faq-head collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="true" aria-controls="faq3">
-                  <h2>Todos os cursos possuem certificado?</h2>
-                  <i class="icon icon-minimal-down"></i>
-                </button>
-        
-            <div id="faq3" class="collapse" aria-labelledby="faq-heading3" data-parent="#accordionExample2">
-              <div class="faq-body">
-                <p>Não. No momento, apenas cursos pagos e aprovados oferecem um certificado de conclusão. Todos os cursos pagos são pré aprovados pela Udemy pois fazem parte de um programa para empresas e por isso possuem a emissão do certificado garantida.</p>
-              </div>
-              
-            </div>
-          </div>
-          <div class="single-faq mb--10" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="600">
-                <button class="faq-head collapsed" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="true" aria-controls="faq4">
-                  <h2>Posso solicitar reembolso se não me adaptar ao curso?</h2>
-                  <i class="icon icon-minimal-down"></i>
-                </button>
-        
-            <div id="faq4" class="collapse" aria-labelledby="faq-heading4" data-parent="#accordionExample2">
-              <div class="faq-body">
-                <p>Sim. A maioria dos reembolsos é feita por meio do método de pagamento original. Algumas restrições podem ser aplicadas e algumas compras podem ser elegíveis somente para reembolsos de crédito.
-                  Não é possível enviar solicitações de reembolso no aplicativo móvel da Udemy. <a target="_blank" href="https://support.udemy.com/hc/pt/articles/229604248-Como-pedir-o-reembolso-de-um-curso">Clique aqui</a> e veja como solicitar.</p>
-              </div>
-              
-            </div>
-          </div>
-      <div class="single-faq mb--10" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="600">
-            <button class="faq-head collapsed" type="button" data-toggle="collapse" data-target="#faq5" aria-expanded="true" aria-controls="faq5">
-              <h2>Quais os métodos de pagamento aceitos?</h2>
-              <i class="icon icon-minimal-down"></i>
-            </button>
-    
-        <div id="faq5" class="collapse" aria-labelledby="faq-heading4" data-parent="#accordionExample2">
-          <div class="faq-body">
-            <p>Cartões de débito e crédito internacionais: aceitamos a maioria dos principais cartões de débito e crédito internacionais, como Visa, MasterCard, American Express, JCB e Discover. PayPal é um método de pagamento aceito para os cursos da Udemy na maioria dos países. <a target="_blank" href="https://support.udemy.com/hc/pt/articles/360000165907-M%C3%A9todos-de-pagamento-na-Udemy-#:~:text=Cart%C3%B5es%20de%20d%C3%A9bito%20e%20cr%C3%A9dito,Udemy%20na%20maioria%20dos%20pa%C3%ADses.">Clique aqui</a> e veja mais.</p>
-          </div>
-          
-        </div>
-      </div>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="faq-guarantee">
-    <div class="row">
-      <div class="col-lg-5 col-md-7 offset-lg-1" data-aos="zoom-in-right"  data-aos-once="true" data-aos-delay="55" data-aos-duration="1500">
-        <div class="content">
-          <h2>Garantia de <span class="text--primary fs-inherit">30 Dias</span> e seu dinheiro de volta</h2>
-          <p>Como prezamos a sua satisfação, todos os cursos elegíveis comprados poderão ser reembolsados no prazo de 30 dias.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-5 offset-lg-1" data-aos="zoom-in-left"  data-aos-once="true" data-aos-delay="55" data-aos-duration="1500">
-        <div class="flex-all-center h-100">
-          <img src="image/guarnatee.png" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="shape-holder faq-shape" data-aos="zoom-in-right" data-aos-once="true"><img src="image/faq-shape.svg" alt=""></div>
-</section>
+    <!-- Home Page End -->
 
 
 
-<!-- Footer Section -->
-<div class="footer-section position-relative">
-  <div class="container margin-decrese">
-      <div class="row justify-content-center">
-          <div class="col-md-9 col-lg-8 col-xl-7" data-aos="flip-down" data-aos-delay="55" data-aos-duration="2000" data-aos-once="true">
-            <div class="footer-content">
-                <span class="title-small-text">Já fez o café?</span>
-                <h2>Creio que você já pode começar a aprender agora, não é mesmo?</h2>
-                <div class="footer-btn"><a href="https://www.udemy.com/user/jonathan-da-cruz/" class="btn btn--orange btn--hover-shine">Demorou cara!</a></div>
-            </div>
-          </div>
-        </div>
-        <span class="section-devider mt--130"></span>
-      <div class="row mt--70">
-          <div class="col-lg-4 col-xl-4 col-sm-6 col-margin">
-              <span class="ft-title-sm">Menu de Ajuda</span>
-              <div class="row">
-                <div class="col-lg-5 col-4">
-                    <ul class="footer-list">
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                      </ul>
-                </div>
-
-                <div class="col-lg-7 col-8">
-                    <ul class="footer-list">
-                        <li><a href="mailto:jonathanadcz@gmail.com">Meu e-mail</a></li> 
-                        <li><a href="https://www.udemy.com/user/jonathan-da-cruz/">Cursos sobre programação</a></li>
-                        <li><a href="https://hotmart.com/pt-br/marketplace/produtos/como-falar-em-publico-e-possivel-nao-ter-medo/S11941831Y">E-book</a></li>
-                      </ul>
-                </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-xl-3 col-sm-6 col-margin">
-              <span class="ft-title-sm"></span>
-              <ul class="footer-list">
-                <li><a href=""> </a></li>
-                <li><a href=""> </a></li>
-                <li><a href=""> </a></li>
-                <li><a href=""> </a></li>
-              </ul>
-          </div>
-           
-        </div>
-  </div>
-  <div class="shape-holder footer-shape-1" data-aos="zoom-in-left" data-aos-once="true"><img src="image/cta-shape.svg" alt=""></div>
-  <div class="shape-holder footer-shape-2" data-aos="zoom-in-right" data-aos-once="true"><img src="image/footer-shape.svg" alt=""></div>
-</div>
-</div>
-  <!-- Vendor JS-->
-  <script src="./plugins/jquery/jquery.min.js"></script>
-  <script src="./plugins/jquery/jquery-migrate.min.js"></script>
-  <script src="./plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
-
-  <!-- Plugins JS -->
-  <script src="./plugins/meanmenu/jquery.meanmenu.js"></script>
-  <script src="./plugins/slick-1.8.1/slick.min.js"></script>
-  <script src="./plugins/fancybox-master/jquery.fancybox.min.js"></script>
-  <script src="./plugins/aos-animation/aos.js"></script>
-
-  <!-- Custom JS -->
-  <script src="./js/active.js"></script>
+    <!-- Main JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap 5 JS Link -->
+    <script src="./lib/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <!-- Fancybox Image Gallery JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- Slider JS Link -->
+    <script src="./lib/slick-1.8.1/slick/slick.min.js"></script>
+    <!-- Main JS Link -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
+ 
